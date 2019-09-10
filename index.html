@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/socket.io.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/library.js"></script>
+  <link rel="icon" href="/css/img/favicon.ico" sizes="16x16">
+  <link rel="stylesheet" type="text/css" href="library.css">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" type="text/css" href="navbar.css">
+  <title>Home / VaohLand</title>
+</head>
+<body class="body">
+  <div id='backgroundBlack' class='backgroundBlack' >
+    <div id='boxPostear' class="boxPostear">
+      <div id="seePostear">
+        <textarea id='textPostear'></textarea>
+        <button id='sendPost' onclick='sendPost()' type="button">Publicar</button>
+      </div>
+
+      <div id='seeChat' class="seeChat">
+        <div id='chat' class="chat">
+        </div>
+        <div class="chatDown">
+          <input type='text' id='textMD'></input>
+          <button id='sendMDElement' type="button">Enviar</button>
+        </div>
+      </div>
+
+      <div id='answerPost' class="answerPost">
+        <div id='seeLastPost' class="seeLastPost">
+        </div>
+        <div class="downBoxAnswer">
+          <textarea id='textAnswer'></textarea>
+          <button id='sendAnswer' type="button">Responder</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar">
+    <div class='navbarIzq' >
+      <img id='iconHamburguer' class="iconHamburguer" src="/img/hamburguesa.png">
+      <img id='iconLogo' class="iconLogo" src="/img/LOGO.png">
+    </div>
+
+    <div id='navbarContent' class="navbarContent">
+      <a href="/">
+        <div class="iconSpace">
+          <img src="/img/home.png">
+        </div>
+      </a>
+      <a href="#">
+        <div class="iconSpace">
+          <img src="/img/games.png">
+        </div>
+      </a>
+      <a href="/MD">
+        <div class="iconSpace">
+          <img src="/img/MD.png">
+        </div>
+      </a>
+      <a href="/chatGlobal">
+        <div class="iconSpace">
+          <img src="/img/chatGlobal.png">
+        </div>
+      </a>
+      <a href="/search">
+        <div class="iconSpace">
+          <img src="/img/search.png">
+        </div>
+      </a>
+      <a id='urlNick' href="#">
+        <div class="iconSpace">
+          <img src="/img/perfil.png">
+        </div>
+      </a>
+      <div id='postear' onclick="showBoxPostear()" class="iconSpace">
+        <img src="/img/writePost.png">
+      </div>
+      <div id='logout' class="iconSpace">
+        <img src="/img/descarga.png">
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+  </div>
+  <div id="loadMore">
+    <button type="button" class="loadMore" onclick="loadMore()" name="button">Mostrar mas</button>
+  </div>
+</body>
+</html>

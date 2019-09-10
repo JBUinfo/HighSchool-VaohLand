@@ -1,0 +1,47 @@
+done -- add borrar mensajes chat CG
+done -- edit colores nick CG
+done -- mover path img
+done -- optimizar borrado
+done -- optimizar publicado
+done -- focus when click on write post
+done -- add comentarios
+done -- solucionar problema visual post desde perfil
+done -- limit characters on nick
+done -- corregir registro
+done -- cambiar user-pass de mongodb
+done -- favicon
+done -- encriptar pass
+done -- hacer que las imagenes se vean bien
+done -- acceder a perfil desde chat global
+done -- ver fecha de publicacion
+done -- comentar codigo
+done -- ver numero de seguidores
+done -- busquedas
+done -- add todo
+done -- edit biografia
+done -- follow people
+done -- optimizar comprobado de follows
+done -- MDs
+done -- adaptar a moviles
+done -- delete MDs
+done -- paginacion
+done -- logo y nombre
+done -- menu en movil
+done -- logout
+done -- colocar TRY CATCH por todas partes
+done -- crear parte admin
+done -- autopost cuando comentas
+done -- cambiar diseño global
+done -- cuando "cargas mas" no borrar toda la lista
+done -- hacer que funcione el redirect
+done -- crear documentacion
+
+
+add notificaciones
+optimizar imagenes
+no guardar el  nombre de imagen en todos los posts?
+add games
+
+mongo
+use yyy
+db.createUser({user: "xxx",pwd: "xxx",roles: [ { role: "userAdminAnyDatabase", db: "admin" }, "readWriteAnyDatabase" ]})

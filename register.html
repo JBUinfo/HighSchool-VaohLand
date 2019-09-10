@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/socket.io.js"></script>
+  <script src="js/register.js"></script>
+  <link rel="icon" href="/css/img/favicon.ico" sizes="16x16">
+  <link rel="stylesheet" type="text/css" href="register.css">
+  <title>Registro / VaohLand</title>
+</head>
+<body class="body">
+  <div id='boxPostear' class="boxPostear">
+    <form id='form' action="/register" method="post" class="boxContent" enctype="multipart/form-data">
+      <label for="nick">Nick* <br> <div class="ayuda">( 3 caracteres min.)</div></label><input name='nick' required id='nick' type="text"><br>
+      <label for="password">Password* <br> <div class="ayuda">( 8 caracteres min.)</div></label><input name='password'  required id='password' type="password"><br>
+      <label for="Fecha">Nacimiento* <div class="ayuda">(+18)</div></label><input name='Fecha'  required id='Fecha' type="date"><br>
+      <button type="button"><label style="color:black;width: unset; padding: 0;" for="image">Img Perfil*</label></button>
+      <input id='image' accept="image/jpg,image/jpeg,image/png,image/gif" name='image' type="file" style='display:none' placeholder="Fecha Cumple">
+      <button id='Register' style="line-height: 1px;height:30px;" name='Register' type="submit">Resgistrar</button>
+      <p id='error'></p>
+    </form>
+  </div>
+</body>
+</html>

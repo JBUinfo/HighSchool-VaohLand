@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="/js/socket.io.js"></script>
+  <script src="/js/libraryAdmin.js"></script>
+  <script src="/js/seePerfil.js"></script>
+  <link rel="icon" href="/css/img/favicon.ico" sizes="16x16">
+  <link rel="stylesheet" type="text/css" href="/css/navbarAdmin.css">
+  <link rel="stylesheet" type="text/css" href="/css/nick.css">
+  <title>Perfiles / VaohLand</title>
+</head>
+<body class="body">
+  <div class="navbar">
+    <div class='navbarIzq' >
+      <img id='iconHamburguer' class="iconHamburguer" src="/img/hamburguesa.png">
+      <img id='iconLogo' class="iconLogo" src="/img/LOGO.png">
+    </div>
+
+    <div id='navbarContent' class="navbarContent">
+      <a href="/chatGlobalAdmin">
+        <div class="iconSpace">
+          <img src="/img/chatGlobal.png">
+        </div>
+      </a>
+      <a href="/indexAdmin">
+        <div class="iconSpace">
+          <img src="/img/search.png">
+        </div>
+      </a>
+      <div id='logout' class="iconSpace">
+        <img src="/img/descarga.png">
+      </div>
+    </div>
+  </div>
+
+  <div id='container' class="container">
+    <div class="boxPerfil">
+      <div id='imgPerfil' class="imgPerfil">
+      </div>
+      <div id='biografia' class="biografia">
+      </div>
+      <div id='nacimiento' class="nacimiento">
+      </div>
+    </div>
+    <div class="boxTL">
+      <div class="content">
+      </div>
+      <div id="loadMore">
+        <button type="button" class="loadMore" onclick="loadMore()" name="button">Mostrar mas</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

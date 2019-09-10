@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="/js/socket.io.js"></script>
+  <script src="/js/libraryAdmin.js"></script>
+  <script src="/js/indexAdmin.js"></script>
+  <link rel="icon" href="/css/img/favicon.ico" sizes="16x16">
+  <link rel="stylesheet" type="text/css" href="/css/navbarAdmin.css">
+  <link rel="stylesheet" type="text/css" href="/css/indexAdmin.css">
+  <title>Busqueda / VaohLand</title>
+</head>
+<body class="body">
+  <div class="navbar">
+    <div class='navbarIzq' >
+      <img id='iconHamburguer' class="iconHamburguer" src="/img/hamburguesa.png">
+      <img id='iconLogo' class="iconLogo" src="/img/LOGO.png">
+    </div>
+
+    <div id='navbarContent' class="navbarContent">
+      <a href="/chatGlobalAdmin">
+        <div class="iconSpace">
+          <img src="/img/chatGlobal.png">
+        </div>
+      </a>
+      <a href="/indexAdmin">
+        <div class="iconSpace">
+          <img src="/img/search.png">
+        </div>
+      </a>
+      <div id='logout' class="iconSpace">
+        <img src="/img/descarga.png">
+      </div>
+    </div>
+  </div>
+
+  <div class="center">
+    <div class="boxSearch">
+      <input type="text" id="inputSearch" class="inputSearch" placeholder="Busca por @ o por texto">
+    </div>
+    <div class="boxSearch">
+
+    </div>
+  </div>
+  <div id="content" class="content">
+  </div>
+</body>
+</html>
