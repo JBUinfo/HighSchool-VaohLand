@@ -1,0 +1,119 @@
+*{
+  word-break: break-all;
+  color: white;
+  font-weight: bold;
+  outline:none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+img {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+body{
+  background-color: #1c3833;
+}
+
+.navbar{
+  left: 0px;
+  background-color: #67d09b;
+  max-height: 65px;
+  z-index: 1;
+  top: 0px;
+  position: fixed;
+  width: 100vw;
+  /* height: inherit; */
+}
+
+.navbarIzq{
+  position: absolute;
+  z-index: 0;
+}
+
+.iconLogo{
+  margin-left: 40px;
+  height: 60px;
+  float: left;
+}
+.navbarContent{
+  margin: auto;
+  height: 100%;
+  display: table;
+}
+
+.iconHamburguer{
+  display: none;
+}
+
+.iconSpace{
+  float: left;
+  display: inline-block;
+  padding: 16px 32px 15px 32px;
+}
+.iconSpace:hover{
+  background-color: #779395;
+}
+
+.iconSpace img {
+  height: 25px;
+  width: 25px;
+}
+
+
+@media (max-width:1220px) {
+  .navbarContent{
+    margin: 0px;
+  }
+  .navbarIzq{
+    display: contents;
+  }
+}
+
+@media (max-width:1000px) {
+  .iconSpace{
+    padding: 16px 19px 15px 18px;
+  }
+  .iconSpace:hover{
+    background-color: transparent;
+  }
+}
+
+@media (max-width:750px) {
+  .navbarIzq{
+    position: relative;
+
+    display: inline-block;
+    width: 100%;
+  }
+
+  .menuMovilOpen{
+    box-shadow: 2px 2px 3px black;
+    display: block;
+    width: max-content;
+  }
+
+  .iconHamburguer{
+    margin-left: 15px;
+    float: left;
+    height: 60px;
+    display: block;
+  }
+
+  .navbar{
+    width: 100vw;
+  }
+  .navbarContent{
+    display: none;
+    width: 100%;
+  }
+  .iconSpace{
+    padding: 16px 32px 15px 32px;
+    float: none;
+    display: block;
+    background-color: #67d09b;
+  }
+}

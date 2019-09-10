@@ -1,0 +1,166 @@
+.loadMore {
+  display: block;
+  background-color: rgb(12, 188, 255);
+  height: 50px;
+  width: 650px;
+  margin: auto;
+  border: 0px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.post {
+  padding-bottom: 8px;
+  box-shadow: 3px 3px 3px black;
+  background-color: #67948c;
+  margin-bottom: 10px;
+  margin: 5px;
+  border-radius: 7px;
+}
+
+.container{
+  width: 100%;
+  padding-top: 100px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.boxPerfil{
+  padding: 25px;
+  border-radius: 25px;
+  position: fixed;
+  min-height: 333px;
+  width: 20%;
+  background-color: #85beef;
+}
+
+.boximg{
+  text-align: center;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  margin: auto;
+  display: block;
+}
+
+.boximg img{
+  height: 100%;
+}
+
+.nick {
+  display: table;
+  margin: auto;
+  color: black;
+}
+
+.biografia i, .nacimiento, .nickPost{
+  color: black;
+}
+
+.penEdit {
+  height: 25px;
+}
+
+#textEditBiografia{
+  height: 100px;
+  resize: none;
+  border-radius: 5px;
+  background-color: #1f2327;
+  border: 0px;
+  width: 100%;
+}
+
+.btnsPerfil {
+  margin: 1px;
+  cursor: pointer;
+  border-radius: 17px;
+  background-color: purple;
+  border: 0px;
+  padding: 0px;
+  display: inline-block;
+  color: black;
+  width: 49%;
+  height: 34px;
+}
+
+#sendEditPerfil{
+  outline: none;
+  border: 0px;
+  border-radius: 5px;
+  background-color: #1c4b7b;
+  padding: 8px;
+  box-shadow: 1px 3px 3px black;
+}
+
+.boxTL{
+  border-radius: 25px;
+  margin-left: 26%;
+  min-height: 100px;
+}
+
+.imgPost{
+  height: 100%;
+  float:left;
+  width: 40px;
+}
+
+.imgPost img{
+  border-radius: 17px;
+  height: 35px;
+  width: 35px;
+}
+.contentPost{
+  padding: 12px 0px 12px 30px;
+  width: 100%;
+}
+
+.textPost{
+  width: 95%;
+}
+
+.postCommented{
+  background-color: #263c33;
+  border-radius: 10px;
+  margin: 20px 10px 10px 40px;
+  padding: 5px;
+  color: grey;
+}
+
+.iconsPost{
+  width: 100%;
+  margin-left: 11px;
+}
+
+.iconsPost img{
+  margin-left: 20px;
+  height: 25px;
+  width: 25px;
+}
+
+.loadMore{
+  width: 100%;
+}
+
+@media (max-width:720px) {
+  .loadMore {
+    width: 80vw ;
+  }
+  .boxTL {
+    margin-left: 0px;
+    border-radius: 25px;
+    min-height: 100px;
+  }
+
+  .boxPerfil {
+    height: auto;
+    width: 100%;
+    padding: 25px;
+    border-radius: 25px;
+    min-height: 0px;
+    background-color: #85beef;
+    position: relative;
+  }
+
+}

@@ -1,0 +1,205 @@
+.loadMore {
+  display: block;
+  background-color: rgb(12, 188, 255);
+  height: 50px;
+  width: 650px;
+  margin: auto;
+  border: 0px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+/* Libreria para los pops */
+
+/*BackgroundBlack*/
+#backgroundBlack{
+  z-index: 2;
+  position: fixed;
+  top: 0px;
+  height: 100%;
+  width: 100vw;
+  background-color:rgba(0, 0, 0, 0.8);
+}
+
+/* POP UP POSTEAR */
+/* Caja verde */
+#boxPostear{
+  box-shadow: 10px 10px 10px black;
+  border-radius: 25px;
+  height: 275px;
+  width: 550px;
+  background-color: #406557;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Caja texto para publicar*/
+#textPostear{
+  box-shadow: 0px 0px 60px black;
+  resize: none;
+  padding: 15px;
+  color: black;
+  width: 450px;
+  position: ABSOLUTE;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 179px;
+  border-radius: 25px;
+}
+
+/* Boton para publicar*/
+#sendPost{
+  right: 50px;
+  outline: none;
+  border: 0px;
+  position: absolute;
+  bottom: 7px;
+  border-radius: 5px;
+  background-color: #1c4b7b;
+  padding: 8px;
+  box-shadow: 1px 3px 3px black;
+}
+
+#sendPost:hover{
+  background-color: grey;
+}
+
+/* POP UP MD */
+/* Caja globa; de chat*/
+.seeChat {
+  height: 100%;
+}
+/* Caja donde se muestra el chat */
+.chat {
+  overflow-x: hidden;
+  height: calc(100% - 82px);
+  padding: 15px;
+  /* overflow-y: scroll; */
+}
+
+/* Cada mesaje es una fila */
+.fila {
+  padding: 5px;
+  width: 100%;
+}
+
+/* Mensajes de la otra persona */
+.izquierda {
+  padding: 5px;
+  max-width: 70%;
+  width: max-content;
+  background-color: #2c304a;
+  border-radius: 8px;
+}
+
+/* Mensajes propios*/
+.derecha {
+  padding: 5px;
+  border-radius: 8px;
+  width: max-content;
+  margin-left: auto;
+  max-width: 70%;
+  background-color: #2c4a41;
+}
+
+/* Parte inferior del pop up*/
+.chatDown {
+  padding: 15px;
+  width: 90%;
+  margin: auto;
+}
+
+/* Caja de texto */
+#textMD{
+  padding: 15px;
+  color: black;
+  width: 80%;
+  border-radius: 25px;
+}
+
+/* Boton para enviar */
+#sendMDElement{
+  position: absolute;
+  margin-left: -30px;
+  height: 50px;
+  outline: none;
+  border: 0px;
+  border-radius: 0px 25px 25px 0px;
+  background-color: black;
+  padding: 5px;
+  width: 20%;
+  margin-top: 1px;
+}
+
+#sendMDElement:hover{
+  background-color: grey;
+}
+
+/* POP UP ANSWER */
+.answerPost{
+  padding: 15px;
+  height: 100%;
+}
+
+.seeLastPost{
+  overflow-y: scroll;
+  background-color: #263c33;
+  height: 50%;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.downBoxAnswer{
+  padding: 10px;
+  height: 50%;
+}
+
+#textAnswer{
+  width: 75%;
+  color: black;
+  resize: none;
+  border-radius: 5px;
+  outline: none;
+  height: 80%;
+}
+
+#sendAnswer{
+  outline: none;
+  border: 0px;
+  border-radius: 5px;
+  background-color: #1c4b7b;
+  padding: 8px;
+  box-shadow: 1px 3px 3px black;
+}
+
+@media (max-width:720px) {
+  .loadMore {
+    width: 80vw ;
+  }
+  #boxPostear{
+    width: 80%;
+    box-shadow: 0px 0px 0px ;
+  }
+
+  #textPostear{
+    position: absolute;
+    width: 75%;
+  }
+
+  #sendPost {
+    padding: 10px;
+  }
+
+  .chatDown {
+    padding: 15px 0px 0px 0px;
+    width: 90%;
+    margin: auto;
+  }
+
+  #textMD {
+    width: 80%;
+  }
+}

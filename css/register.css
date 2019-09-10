@@ -1,0 +1,77 @@
+*{
+  font-weight: bold;
+  outline:none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+}
+.body{
+  padding: 0px;
+  margin: 0px;
+  background-color: #67948c;
+}
+
+.boxPostear{
+  box-shadow: 10px 10px 10px black;
+  border-radius: 25px;
+  min-height: 275px;
+  height: auto;
+  width: 550px;
+  background-color: #1c3833;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.boxContent{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ayuda{
+  display: block !important;
+  width: 100% !important;
+  padding:0px !important;
+  margin:0px !important;
+  font-size:10px !important;
+}
+
+.boxContent label{
+  color: white;
+  margin: 3px;
+  display: inline-block;
+  width: 45%;
+  border: 0px;
+  padding: 3px;
+}
+.boxContent input, .boxContent button{
+  color: white;
+  margin: 3px;
+  display: inline-block;
+  width: 47%;
+  border: 0px;
+  padding: 3px;
+  color: black;
+}
+.boxContent input{
+  color: white;
+  margin: 3px;
+  display: inline-block;
+  width: 50%;
+  border: 0px;
+  padding: 3px;
+  color: black;
+}
+
+@media (max-width:720px) {
+  .boxPostear{
+    height: 50%;
+  }
+  .boxContent *{
+    width: 100%;
+  }
+
+}

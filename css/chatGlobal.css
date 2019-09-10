@@ -1,0 +1,160 @@
+.content{
+  z-index: 0;
+  margin: 100px;
+  width: calc(100vw - 200px);
+  height:calc(100vh - 200px);
+}
+
+.chat{
+  position: relative;
+  border-radius: 25px 25px 0px 0px ;
+  padding: 10px 25px 0px 25px ;
+  background-color: #67948c;
+  height: 90%;
+  width: 100%;
+}
+
+.prueba{
+  padding-right: 25px;
+  position: relative;
+  overflow-x: hidden;
+  height: 100%;
+  width: 101%;
+  bottom: 0px;
+}
+
+.prueba::-webkit-scrollbar-track {
+  background-color: #777995;
+}
+.prueba::-webkit-scrollbar{
+  width: 12px;
+  background-color: #F5F5F5;
+}
+
+.prueba::-webkit-scrollbar-thumb{
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #555;
+}
+
+.line{
+  padding: 1px;
+  width: 100%;
+}
+
+.msg{
+  max-width: 80%;
+  background-color: cadetblue;
+  border-radius: 10px;
+  width: max-content;
+  padding: 1px;
+}
+
+.ownNick{
+  max-width: 80%;
+  margin-left: auto;
+  background-color: #2c4a41;
+  border-radius: 10px;
+  width: max-content;
+  padding: 1px;
+}
+
+
+.nick{
+  max-width: 100%;
+  margin: 7px;
+  border-radius: 10px;
+  width: max-content;
+  padding: 1px 20px 1px 1px;
+  display: inline-block;
+}
+
+.text{
+  padding: 5px;
+  margin: 7px;
+  border-radius: 10px;
+  width: max-content;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.trash{
+  padding: 1px;
+      display: contents;
+}
+.trash img{
+  width: 25px;
+}
+
+.inputChat{
+  background-image: linear-gradient(#67948c, black);
+  width: 100%;
+  height: auto;
+  padding: 21px;
+}
+
+.inputText{
+  border-radius: 15px;
+  padding: 8px;
+  color: black;
+  display: inline-block;
+  width: 95%;
+  height: 100%;
+  resize: none;
+  border: 0px;
+}
+
+.inputChat img{
+  height: 25px;
+  width: auto;
+}
+
+
+@media (max-width:1100px) {
+  .content{
+    width: auto;
+  }
+  .perfil {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+  }
+}
+
+@media (max-width:414px) {
+  .inputChat{
+    min-height: 70px;
+  }
+  .navbar{
+    top: 0px;
+    position: fixed;
+    width: 100%;
+    height: fit-content;
+    background-color: #957783;
+  }
+
+  .navbarContent{
+    margin-left: auto;
+  }
+  .searchSpace {
+    float: none;
+    display: inherit;
+
+  }
+  .content{
+    height: calc( 100vh - 160px );
+    margin-top: 59px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+  }
+  .chat{
+    border-radius: 0px ;
+  }
+  .inputText{
+    width: 85%;
+    min-height: 30px;
+  }
+}
